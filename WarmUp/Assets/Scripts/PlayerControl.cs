@@ -18,12 +18,12 @@ public class PlayerControl : MonoBehaviour {
 	
 		if (Input.GetKey (KeyCode.W)) {
 			Debug.Log ("W");
-			pos.y += move;
+			pos.z += move;
 		}
 
 		if (Input.GetKey (KeyCode.S)) {
 
-			pos.y -= move;
+			pos.z -= move;
 		}
 
 		if (Input.GetKey (KeyCode.A)) {
