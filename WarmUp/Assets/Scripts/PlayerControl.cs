@@ -5,7 +5,6 @@ public class PlayerControl : MonoBehaviour {
 
 	public float move;
 	Vector3 pos;
-	public Rigidbody rb;
 
 	// Use this for initialization
 	void Start () {
@@ -15,16 +14,16 @@ public class PlayerControl : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 	
 		if (Input.GetKey (KeyCode.W)) {
 			Debug.Log ("W");
-			rb.AddForce(transform.forward * move);
+			pos.y += move;
 		}
 
 		if (Input.GetKey (KeyCode.S)) {
 
-			rb.AddForce (transform.forward * -move);
+			pos.y -= move;
 		}
 
 		if (Input.GetKey (KeyCode.A)) {
