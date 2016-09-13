@@ -17,7 +17,7 @@ public class PlayerControl : MonoBehaviour {
 	void Update () {
 	
 		if (Input.GetKey (KeyCode.W)) {
-			Debug.Log ("W");
+			//Debug.Log ("W");
 			pos.z += move;
 		}
 
